@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "ZephTech Solutions",
+      "address": "12 Eneka Road, Port Harcourt",
+      "phone": "+234-803-456-7890",
+      "website": "https://zephtech.com",
+      "image": "zephtech.jpeg",
+      "membershipLevel": 3,
+      "description": "A technology and IT consulting firm providing innovative software solutions."
+    },
+    {
+      "name": "Green Earth Ventures",
+      "address": "45 Market Avenue, Port Harcourt",
+      "phone": "+234-809-876-2345",
+      "website": "https://greenearth.com",
+      "image": "greenearth.jpeg",
+      "membershipLevel": 2,
+      "description": "Sustainable environmental solutions and recycling innovations."
+    },
+    {
+      "name": "Bright Future Academy",
+      "address": "88 Rumuola Street, Port Harcourt",
+      "phone": "+234-706-556-7771",
+      "website": "https://brightfuture.edu.ng",
+      "image": "brightfuture.jpeg",
+      "membershipLevel": 1,
+      "description": "A modern educational institution focused on child development and digital learning."
+    },
+    {
+      "name": "TasteCity Restaurants",
+      "address": "23 Ada George Road, Port Harcourt",
+      "phone": "+234-802-123-9999",
+      "website": "https://tastecity.com",
+      "image": "tastecity.jpeg",
+      "membershipLevel": 3,
+      "description": "Fine dining restaurant chain offering continental and local dishes."
+    },
+    {
+      "name": "PureFlow Water Company",
+      "address": "67 East-West Road, Port Harcourt",
+      "phone": "+234-805-765-0021",
+      "website": "https://pureflow.com",
+      "image": "pureflow.jpeg",
+      "membershipLevel": 2,
+      "description": "Producers of bottled and purified water for domestic and industrial use."
+    },
+    {
+      "name": "SunPower Energy",
+      "address": "18 Choba Road, Port Harcourt",
+      "phone": "+234-811-009-4455",
+      "website": "https://sunpowerenergy.com",
+      "image": "sunpower.jpeg",
+      "membershipLevel": 1,
+      "description": "Solar panel installers and renewable energy consultants."
+    },
+    {
+      "name": "Royal Prints & Media",
+      "address": "32 Aba Road, Port Harcourt",
+      "phone": "+234-818-888-2010",
+      "website": "https://royalprints.com",
+      "image": "royalprints.jpeg",
+      "membershipLevel": 2,
+      "description": "Professional printing, branding, and media production services."
+    }
+  ]
+}
