@@ -1,0 +1,15 @@
+@media (min-width:48rem){
+  .header-inner{ padding:1rem; align-items:center; }
+  .primary-nav{ display:block; margin-left:auto; }
+  .hamburger{ display:none; }
+  .nav-list{ gap:1.25rem; }
+  .hero-inner{ display:flex; align-items:center; gap:1.5rem; }
+  .hero-image{ width:50%; max-width:640px; }
+  .hero-text{ width:50%; }
+  .courses-grid{ grid-template-columns: repeat(2, 1fr); }
+  .about-inner{ display:flex; gap:1rem; align-items:center; }
+}
+
+@media (min-width:80rem){
+  .courses-grid{ grid-template-columns: repeat(3, 1fr); }
+}
