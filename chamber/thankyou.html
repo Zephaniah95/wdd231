@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - Chamber Membership</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="events.html">Events</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Thank You for Your Application!</h1>
+    <p>Your submitted details are:</p>
+    <ul id="submitted-info"></ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ogbogu Chamber of Commerce</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const params = new URLSearchParams(window.location.search);
+      const infoList = document.getElementById("submitted-info");
+      const fields = ["firstName","lastName","email","phone","organization","timestamp"];
+
+      fields.forEach(field => {
+        const li = document.createElement("li");
+        li.textContent = `${field}: ${params.get(field) || "N/A"}`;
+        infoList.appendChild(li);
+      });
+    });
+  </script>
+</body>
+</html>

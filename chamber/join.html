@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join the Chamber</title>
+  <link rel="stylesheet" href="styles/join.css">
+  <link rel="icon" href="images/favicon.ico">
+  <script defer src="scripts/join.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <!-- Navigation (responsive with wayfinding) -->
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="events.html">Events</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="join-form-section">
+      <h1>Apply for Membership</h1>
+      <form id="membership-form" method="get" action="thankyou.html">
+        <label>
+          First Name:
+          <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+        </label>
+
+        <label>
+          Last Name:
+          <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+        </label>
+
+        <label>
+          Title:
+          <input type="text" name="title" title="Enter your title in your organization" autocomplete="organization-title"
+                 pattern="[A-Za-z\s-]{7,}" placeholder="Manager" required>
+        </label>
+
+        <label>
+          Email:
+          <input type="email" name="email" title="Enter your email" autocomplete="email" placeholder="example@email.com" required>
+        </label>
+
+        <label>
+          Mobile Number:
+          <input type="tel" name="phone" title="Enter your phone number" autocomplete="tel" required>
+        </label>
+
+        <label>
+          Business/Organization Name:
+          <input type="text" name="organization" title="Enter your business/organization name" autocomplete="organization" required>
+        </label>
+
+        <label>
+          Membership Level:
+          <select name="membership" title="Select your membership level" required>
+            <option value="np">NP Membership</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label>
+          Business Description:
+          <textarea name="description" title="Describe your business"></textarea>
+        </label>
+
+        <input type="hidden" name="timestamp" id="timestamp">
+        <input type="submit" value="Submit Application">
+      </form>
+    </section>
+
+    <!-- Membership Cards -->
+    <div class="card np">
+    <h3>NP Membership</h3>
+    <p>Support your community with no fee—perfect for non-profits!</p>
+    <a href="#" class="open-modal" data-modal="npModal">Learn More</a>
+</div>
+
+<div class="card bronze">
+    <h3>Bronze Membership</h3>
+    <p>Get noticed with essential features to boost your business presence.</p>
+    <a href="#" class="open-modal" data-modal="bronzeModal">Learn More</a>
+</div>
+
+<div class="card silver">
+    <h3>Silver Membership</h3>
+    <p>Take your business further with added benefits and exposure.</p>
+    <a href="#" class="open-modal" data-modal="silverModal">Learn More</a>
+</div>
+
+<div class="card gold">
+    <h3>Gold Membership</h3>
+    <p>Maximize your reach with premium perks, events, and spotlight features!</p>
+    <a href="#" class="open-modal" data-modal="goldModal">Learn More</a>
+</div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ogbogu Chamber of Commerce</p>
+  </footer>
+
+  <!-- Modals -->
+  <div class="modal" id="modal-np"><div class="modal-content"><span class="close">&times;</span><p>Benefits of NP Membership...</p></div></div>
+  <div class="modal" id="modal-bronze"><div class="modal-content"><span class="close">&times;</span><p>Benefits of Bronze Membership...</p></div></div>
+  <div class="modal" id="modal-silver"><div class="modal-content"><span class="close">&times;</span><p>Benefits of Silver Membership...</p></div></div>
+  <div class="modal" id="modal-gold"><div class="modal-content"><span class="close">&times;</span><p>Benefits of Gold Membership...</p></div></div>
+<body class="join-page">
+
+</body>
+</html>
