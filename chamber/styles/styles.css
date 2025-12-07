@@ -1,119 +1,173 @@
-/* -------- Base Styles -------- */
-body {
-  font-family: "Inter", sans-serif;
-  margin: 0;
-  color: #222;
-  background-color: #f9f9f9;
-  line-height: 1.6;
+/* ---------- GLOBAL ---------- */
+:root {
+  --primary: #004c6d;
+  --secondary: #0e7c86;
+  --light: #f5faff;
+  --dark: #002a38;
+  --accent: #e0c300;
+
+  --shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 
-header {
-  background-color: #004d40;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+/* ---------- HEADER ---------- */
+.site-header {
+  background: var(--primary);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: var(--shadow);
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main-nav ul {
   list-style: none;
   padding: 0;
-  margin: 1rem 0 0;
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 .main-nav a {
-  color: #fff;
+  color: white;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
 }
 
-.main-nav a:hover,
 .main-nav a[aria-current="page"] {
-  text-decoration: underline;
+  border-bottom: 2px solid var(--accent);
 }
 
-/* -------- Directory Layout -------- */
-main {
-  padding: 1.5rem;
-  max-width: 1200px;
-  margin: auto;
+/* ---------- MOBILE MENU ---------- */
+#menu-toggle {
+  display: none;
+  background: none;
+  font-size: 1.8rem;
+  color: white;
+  border: none;
 }
 
-.view-toggle {
+@media (max-width: 760px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    background: var(--primary);
+    padding: 1rem;
+  }
+
+  #nav-links.open {
+    display: flex;
+  }
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  position: relative;
+  height: 55vh;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin-bottom: 1.5rem;
 }
 
-.view-toggle button {
-  background: #e0e0e0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin: 0 0.5rem;
-  padding: 8px 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.hero-text {
+  color: white;
+  animation: fadeIn 1.4s ease-in-out;
 }
 
-.view-toggle button.active {
-  background-color: #004d40;
-  color: #fff;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-#directory.grid {
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.3rem;
+  background: var(--accent);
+  color: black;
+  border-radius: 5px;
+  margin-top: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ---------- SECTIONS ---------- */
+.section-box {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+ul {
+  padding-left: 1.3rem;
+}
+
+/* ---------- SPOTLIGHT CARDS ---------- */
+.spotlight-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
 
-.member-card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  text-align: center;
-  transition: transform 0.2s ease;
+@media (min-width: 700px) {
+  .spotlight-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.member-card:hover {
-  transform: scale(1.03);
-}
-
-.member-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.member-info {
+.spotlight-card {
+  background: var(--light);
   padding: 1rem;
-}
-
-#directory.list {
-  display: block;
-}
-
-#directory.list .member-card {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  text-align: left;
-}
-
-#directory.list .member-image {
-  width: 90px;
-  height: 90px;
-  margin-right: 20px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-footer {
-  background-color: #004d40;
-  color: #fff;
   text-align: center;
-  padding: 1rem 0;
-  font-size: 0.9rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.spotlight-card img {
+  width: 100px;
+  margin-bottom: 0.5rem;
+}
+
+/* ---------- FOOTER ---------- */
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary);
+  color: white;
+  margin-top: 2rem;
 }

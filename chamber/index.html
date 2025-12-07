@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ogbogu Chamber of Commerce — Home</title>
+  <meta name="description" content="Ogbogu Chamber of Commerce: empowering businesses, promoting growth, and supporting local enterprises in Ogbogu." />
+  <meta name="author" content="Imegi Nmeri Zephaniah" />
+
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+
+  <script defer src="scripts/date.js"></script>
+  <script defer src="scripts/home.js"></script>
+  <script defer src="scripts/menu.js"></script>
+  <script defer src="scripts/spotlights.js"></script>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <h1>Ogbogu Chamber of Commerce</h1>
+    <nav class="main-nav">
+      <button id="menu-toggle" aria-label="Open navigation menu">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Join</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="images/hero.jpeg" alt="Welcome to the Ogbogu Chamber of Commerce" class="hero-image">
+
+  <div class="hero-overlay">
+    <div class="hero-text">
+      <h2>Empowering Local Businesses</h2>
+      <p>Building a stronger Ogbogu through unity and innovation.</p>
+      <a href="join.html" class="btn cta-btn">Join the Chamber</a>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<section class="current-events section-box">
+  <h2>Current Events</h2>
+  <ul>
+    <li>Annual Business Networking — Dec 1</li>
+    <li>Small Business Workshop — Dec 15</li>
+    <li>Holiday Gala — Dec 22</li>
+  </ul>
+</section>
+
+<section class="weather section-box">
+  <h2>Live Weather Update</h2>
+  <div id="weather-container">Loading weather...</div>
+</section>
+
+<section class="spotlights section-box">
+  <h2>Member Spotlights</h2>
+  <div id="spotlight-container" class="spotlight-cards">Loading member spotlights...</div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>&copy; <span id="year"></span> Ogbogu Chamber — Imegi Nmeri Zephaniah</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </div>
+</footer>
+</body>
+</html>
