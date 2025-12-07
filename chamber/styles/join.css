@@ -141,25 +141,28 @@ header nav a:hover {
     max-width: 250px;
 }
 
-/* Membership-specific colors */
-.join-page .card.np {
-    background-color: #a3d9a5;
-    color: #004c6d;
+.card.bronze { 
+    background-color: #b76b36; /* slightly darker bronze */
+    color: #ffffff; 
 }
 
-.join-page .card.bronze {
-    background-color: #cd7f32;
-    color: white;
+.card.silver { 
+    background-color: #b0b0b0; /* darker silver */
+    color: #004c6d; 
 }
 
-.join-page .card.silver {
-    background-color: #c0c0c0;
-    color: #004c6d;
+.card.gold { 
+    background-color: #e6c200; /* darker gold */
+    color: #004c6d; 
 }
 
-.join-page .card.gold {
-    background-color: #ffd700;
-    color: #004c6d;
+.card.np {
+    background-color: #88c788; /* slightly darker green */
+    color: #002a38; 
+}
+
+a.open-modal {
+    color: #004c6d; /* darker links for contrast */
 }
 
 /* Animation delay per card */
