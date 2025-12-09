@@ -2,7 +2,7 @@
 
 export async function loadProjects() {
   try {
-    const response = await fetch('../data/projects.json');
+    const response = await fetch('data/projects.json');
     if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
 
     const json = await response.json();
