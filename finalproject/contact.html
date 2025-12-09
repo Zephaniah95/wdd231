@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Zeph Graphics — Contact</title>
+  <meta name="description" content="Contact Zeph Graphics for branding, poster design, and web visuals.">
+  <meta name="author" content="Imegi Nmeri Zephaniah">
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/finalproject.css">
+  <script defer src="scripts/menu.js"></script>
+  <script defer src="scripts/footer-date.js"></script>
+  <script defer src="scripts/contact.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">Zeph Graphics</a>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+        <button id="menu-toggle" aria-expanded="false" aria-controls="nav-links">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-box">
+      <h1>Contact</h1>
+      <p>Use the form to request a quote or tell me about your project.</p>
+
+      <form id="contact-form" method="get" action="thankyou.html" novalidate>
+        <label>
+          First Name
+          <input name="first" type="text" required autocomplete="given-name" title="First name">
+        </label>
+
+        <label>
+          Last Name
+          <input name="last" type="text" required autocomplete="family-name" title="Last name">
+        </label>
+
+        <label>
+          Email
+          <input name="email" type="email" required autocomplete="email" placeholder="name@example.com" title="Email address">
+        </label>
+
+        <label>
+          Phone
+          <input name="phone" type="tel" autocomplete="tel" title="Phone number">
+        </label>
+
+        <label>
+          Organization
+          <input name="org" type="text" autocomplete="organization" title="Organization">
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" title="Project description"></textarea>
+        </label>
+
+        <!-- hidden timestamp -->
+        <input type="hidden" id="timestamp" name="timestamp" value="">
+
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Zeph Graphics — Imegi Nmeri Zephaniah</p>
+    </div>
+  </footer>
+</body>
+</html>

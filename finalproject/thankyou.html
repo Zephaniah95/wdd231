@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Thank you — Zeph Graphics</title>
+  <meta name="author" content="Imegi Nmeri Zephaniah">
+  <link rel="stylesheet" href="styles/finalproject.css">
+  <script defer src="scripts/footer-date.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">Zeph Graphics</a>
+    </div>
+  </header>
+
+  <main class="section-box">
+    <h1>Thank you!</h1>
+    <p>Your submission was received. Below are the details you entered:</p>
+
+    <div id="submitted-data" class="submitted-data"></div>
+    <p><a href="index.html" class="btn">Return Home</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Zeph Graphics — Imegi Nmeri Zephaniah</p>
+    </div>
+  </footer>
+
+  <script>
+    // parse URLSearchParams and display only required fields
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(location.search);
+      const required = ['first','last','email','phone','org','timestamp'];
+      const container = document.getElementById('submitted-data');
+      required.forEach(k => {
+        const p = document.createElement('p');
+        const label = {
+          first: 'First name',
+          last: 'Last name',
+          email: 'Email',
+          phone: 'Phone',
+          org: 'Organization',
+          timestamp: 'Submitted at'
+        }[k] || k;
+        p.innerHTML = `<strong>${label}:</strong> ${params.get(k) || '—'}`;
+        container.appendChild(p);
+      });
+    });
+  </script>
+</body>
+</html>

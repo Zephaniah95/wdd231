@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Zeph Graphics — Projects</title>
+  <meta name="description" content="Portfolio projects from Zeph Graphics — posters, branding, and web visuals.">
+  <meta name="author" content="Imegi Nmeri Zephaniah">
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/finalproject.css">
+  <script type="module" defer src="scripts/projects.js"></script>
+  <script defer src="scripts/menu.js"></script>
+  <script defer src="scripts/footer-date.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">Zeph Graphics</a>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="menu-toggle" aria-expanded="false" aria-controls="nav-links">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-box">
+      <h1>Projects</h1>
+
+      <div id="visit-message" class="visit-message" aria-live="polite"></div>
+
+      <div class="controls">
+        <label for="filter">Filter:</label>
+        <select id="filter" aria-label="Filter projects">
+          <option value="all">All</option>
+          <option value="branding">Branding</option>
+          <option value="poster">Poster</option>
+          <option value="web">Web</option>
+        </select>
+
+        <label for="search" class="sr-only">Search</label>
+        <input id="search" type="search" placeholder="search projects" aria-label="Search projects">
+      </div>
+
+      <div id="projects-grid" class="projects-grid" aria-live="polite">
+        <!-- Items injected by scripts/projects.js -->
+      </div>
+    </section>
+
+    <!-- Accessible modal for details -->
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close dialog">✕</button>
+        <h2 id="modal-title"></h2>
+        <img id="modal-image" alt="" loading="lazy">
+        <p id="modal-desc"></p>
+        <p id="modal-meta"></p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Zeph Graphics — Imegi Nmeri Zephaniah</p>
+      <p><a href="attributions.html">Attributions</a></p>
+    </div>
+  </footer>
+</body>
+</html>

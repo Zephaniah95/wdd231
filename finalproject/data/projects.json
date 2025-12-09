@@ -1,0 +1,139 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Zeph Brand Kit",
+      "category": "branding",
+      "year": 2024,
+      "description": "Full brand identity: logo, color system, and stationery.",
+      "image": "brand.webp",
+      "tags": ["logo", "identity"]
+    },
+    {
+      "id": 2,
+      "title": "Pageantry Poster",
+      "category": "poster",
+      "year": 2025,
+      "description": "Event poster with bold typography and layered textures.",
+      "image": "pageantry.webp",
+      "tags": ["poster", "event"]
+    },
+    {
+      "id": 3,
+      "title": "Catering Banner Design",
+      "category": "branding",
+      "year": 2025,
+      "description": "Taste soothe kitchen and pasteries banner.",
+      "image": "catering.webp",
+      "tags": ["banner", "print"]
+    },
+    {
+      "id": 4,
+      "title": "Product Landing",
+      "category": "web",
+      "year": 2025,
+      "description": "Promotional single-page design for a small product.",
+      "image": "ui.webp",
+      "tags": ["ui", "landing"]
+    },
+    {
+      "id": 5,
+      "title": "Album Cover",
+      "category": "poster",
+      "year": 2022,
+      "description": "Concept album artwork with collage and color grading.",
+      "image": "album.webp",
+      "tags": ["album", "art"]
+    },
+    {
+      "id": 6,
+      "title": "Corporate Brochure",
+      "category": "branding",
+      "year": 2024,
+      "description": "Tri-fold brochure for a service company.",
+      "image": "brochure.webp",
+      "tags": ["brochure", "print"]
+    },
+    {
+      "id": 7,
+      "title": "E-commerce Banner Set",
+      "category": "web",
+      "year": 2023,
+      "description": "Web banners optimized for social and display.",
+      "image": "web.webp",
+      "tags": ["ads", "web"]
+    },
+    {
+      "id": 8,
+      "title": "Community Mural Mockup",
+      "category": "poster",
+      "year": 2021,
+      "description": "Large scale mural artwork concept and color studies.",
+      "image": "mural.webp",
+      "tags": ["mural", "public"]
+    },
+    {
+      "id": 9,
+      "title": "Photography Retouching",
+      "category": "web",
+      "year": 2024,
+      "description": "High-end retouch and color correction samples.",
+      "image": "photo.webp",
+      "tags": ["photo", "retouch"]
+    },
+    {
+      "id": 10,
+      "title": "Event Identity",
+      "category": "branding",
+      "year": 2023,
+      "description": "Identity system for an annual conference.",
+      "image": "event.webp",
+      "tags": ["identity", "event"]
+    },
+    {
+      "id": 11,
+      "title": "Poster Series B",
+      "category": "poster",
+      "year": 2023,
+      "description": "Three-poster series using a limited palette.",
+      "image": "poster.webp",
+      "tags": ["series", "poster"]
+    },
+    {
+      "id": 12,
+      "title": "Restaurant Branding",
+      "category": "branding",
+      "year": 2024,
+      "description": "Logo, business card and signage designs.",
+      "image": "restaurant.webp",
+      "tags": ["restaurant", "identity"]
+    },
+    {
+      "id": 13,
+      "title": "Micro-site UI",
+      "category": "web",
+      "year": 2024,
+      "description": "Micro-site UI for a case study presentation.",
+      "image": "micro.webp",
+      "tags": ["ui", "web"]
+    },
+    {
+      "id": 14,
+      "title": "Social Pack",
+      "category": "web",
+      "year": 2023,
+      "description": "Social media templates and layouts.",
+      "image": "social.webp",
+      "tags": ["social", "templates"]
+    },
+    {
+      "id": 15,
+      "title": "Packaging Concept",
+      "category": "branding",
+      "year": 2022,
+      "description": "Eco-friendly packaging concept with dielines.",
+      "image": "concept.webp",
+      "tags": ["packaging", "concept"]
+    }
+  ]
+}
